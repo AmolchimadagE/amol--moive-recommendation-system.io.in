@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Movie Recommendation Assisstant</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <style type="text/css">
+      #himg img {
+       /* margin: 10px auto;*/
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+      }
+
+      #register{  
+        z-index: 21;
+        opacity: 0;
+      }
+
+      #toregister:target ~ #wrapper #register,
+      #tologin:target ~ #wrapper #login{
+        z-index: 22;
+        animation-name: fadeInLeft;
+        animation-delay: .1s;
+      }
+
+      .animate{
+        animation-duration: 0.5s;
+        animation-timing-function: ease;
+        animation-fill-mode: both;
+      }
+      @keyframes fadeInLeft {
+        0% {
+          opacity: 0;
+          transform: translateX(-20px);
+        }
+        
+        100% {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+
+      #toregister:target ~ #wrapper #login,
+      #tologin:target ~ #wrapper #register{
+        animation-name: fadeOutLeftBig;
+      }
+
+      @keyframes fadeOutLeft {
+        0% {
+          opacity: 1;
+          transform: translateX(0);
+        }
+        
+        100% {
+          opacity: 0;
+          transform: translateX(-20px);
+        }
+      }
+    </style>
+  </head>
+
+  <body class="bg-info text-white">
+    <header class="text-center mt-3">
+      <h1>Movie Recommendation Assistant</h1>
+    </header>
+    
+    <!-- Headshot -->
+    <div id="himg" class=" text-center mt-3 mb-5">
+      <img src="img/himg.jpg" class="img-fluid">
+    </div>
+    <!-- /Headshot -->
+
+    <!-- input form -->
+    <section>
+      <a class="hiddenanchor" id="toregister"></a>
+      <a class="hiddenanchor" id="tologin"></a>
+      <div id="wrapper">
+        <!-- Login form-->
+        <div id="login" class="animate form">
+          <form class=" container col-md-4" action="connect.php" method="POST" autocomplete="on">
+            <div class="form-group">
+              <label for="username">User Name</label>
+              <input id="username" type="text" class="form-control" placeholder="Input your username" required="required">
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input id="password" type="text" class="form-control" placeholder="Input your password" required="required">
+            </div>
+            <div class="">
+              <button type="submit" value="login" class="btn btn-outline-primary">Login</button>
+              <p class="change_link">
+              Not a member yet ?<a href="#toregister" class="to_register">Join us</a>
+              </p>
+            </div>
+          </form>
+        </div>
+        <!-- /Login form -->
+        
+        <!-- Register form -->
+        <div id="register" class="animate form">
+          <form class=" container col-md-4" action="connect.php" method="POST" autocomplete="on">
+            <div class="form-group">
+              <label for="usernamesignup">User Name</label>
+              <input type="text" class="form-control" placeholder="Input your username" required="required">
+            </div>
+            <div class="form-group">
+              <label for="passwordsignup">Password</label>
+              <input type="text" class="form-control" placeholder="Input your password" required="required">
+            </div>
+            <div class="form-group">
+              <label for="passwordsignup_confirm">Please confirm yout password</label>
+              <input type="text" class="form-control" placeholder="Input your password" required="required">
+            </div>
+            <div class="">
+              <button type="submit" value="sign up" class="btn btn-outline-primary">Sign Up</button>
+              <p class="change_link">  
+                Already a member ?<a href="#tologin" class="to_login"> Go and log in </a>
+              </p>
+            </div>
+          </form>
+        </div>
+        <!-- /Register form -->
+      </div>
+    </section>
+   
+    <!-- /input form -->
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  </body>
+</html>

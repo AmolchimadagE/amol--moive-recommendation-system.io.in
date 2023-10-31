@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Movie Recommendation Assisstant</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+    <style type="text/css">
+      .wrapper {
+        min-width:500px;
+        padding: 0 15px;
+      }
+      .navigation {
+        position:fixed;
+      }
+      .content {
+        background-color:#fff;
+      }
+
+       #himg img {
+       /* margin: 10px auto;*/
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="row">
+        <!-- col-md-2 navigation -->
+        <div class="navbar col-md-2 left flex-column bg-info text-white text-center ">
+        <div class="container">
+          <div id="himg" class=" text-center mt-5 mb-3">
+            <img src="img/himg.jpg" class="img-fluid">
+          </div>
+          <h3 class="navbar-brand">Uma</h3>
+          <a class="nav-link" href="home.html">Home</a>
+          <a class="nav-link" href="#">History</a>
+          <a class="nav-link" href="#">Movie</a>
+        </div>
+      </div>
+        <!-- /col-md-2 navigation -->
+        
+      <div class="col-md-10 content">
+        <!-- Movie contents -->
+        <h1 id="high" class="display-4 mt-3 ml-3 text-muted">Movie</h1>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div>
+                <img src="img/snoopy1.jpg" class="img-fluid rounded hidden-xs-down" alt="Responsive image">
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <h3 >Movie Name: </h3>
+              <h3 >Average rating: </h3>
+               <div class="input-group">
+                <input type="text" class="form-control" placeholder="Your rating...">
+                <span class="input-group-btn">
+                  <button class="btn btn-info" type="button">Rate!</button>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /Movie contents -->
+
+        <!-- Recommend Movie -->
+        <h1 id="high" class="display-4 mt-3 ml-3 text-muted">Recommended Movies</h1>
+        <div class="container mt-3">
+          <div class="row">
+            <div class="col-md-6 col-lg-3 mb-3">
+              <div class="card">
+                <img class="card-img-top img-fluid" src="img/angie.png" alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Movie Name</h4>
+                  <p class="card-text">Average rating</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 mb-3">
+              <div class="card">
+                <img class="card-img-top img-fluid" src="img/angie.png" alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Movie Name</h4>
+                  <p class="card-text">Average rating</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 mb-3">
+              <div class="card">
+                <img class="card-img-top img-fluid" src="img/nodestradamus.png" alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Movie Name</h4>
+                  <p class="card-text">Average rating</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 mb-3">
+              <div class="card">
+                <img class="card-img-top img-fluid" src="img/geo.png" alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Movie Name</h4>
+                  <p class="card-text">Average rating</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 mb-3">
+              <div class="card">
+                <img class="card-img-top img-fluid" src="img/ecma.png" alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Movie Name</h4>
+                  <p class="card-text">Average rating</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 mb-3">
+              <div class="card">
+                <img class="card-img-top img-fluid" src="img/nodestradamus.png" alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Movie Name</h4>
+                  <p class="card-text">Average rating</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 mb-3">
+              <div class="card">
+                <img class="card-img-top img-fluid" src="img/ecma.png" alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Movie Name</h4>
+                  <p class="card-text">Average rating</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 mb-3">
+              <div class="card">
+                <img class="card-img-top img-fluid" src="img/jay.png" alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Movie Name</h4>
+                  <p class="card-text">Average rating</p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- footer -->
+            <div class="ml-3 col-6 ">             
+              <small>&copy; 2017 Made with Qi Zhang & Kexun Niu</small>
+            </div>
+            <!-- /footer -->
+
+          </div>
+        </div>
+
+           
+
+
+
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  </body>
+</html>
